@@ -1,5 +1,5 @@
 import React from 'react';
-import { ApolloClient, InMemoryCache, ApolloProvider } from '@apollo/client';
+
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 
 import About from './pages/About';
@@ -10,16 +10,13 @@ import Work from './pages/Work';
 import Header from './components/Header';
 import Footer from './components/Footer';
 
-const client = new ApolloClient({
-  uri: '/graphql',
-  cache: new InMemoryCache(),
-});
-import logo from './logo.svg';
+
+
 import './App.css';
 
 function App() {
   return (
-    <ApolloProvider client={client}>
+   <div>
     {/* Wrap page elements in Router component to keep track of location state */}
     <Router>
       <div className="flex-column justify-flex-start min-100-vh">
@@ -55,7 +52,7 @@ function App() {
         <Footer />
       </div>
     </Router>
-  </ApolloProvider>
+    </div>
   );
 }
 

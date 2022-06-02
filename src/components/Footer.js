@@ -4,7 +4,7 @@ import React from 'react';
 
 const Footer = () => {
     return (
-        <footer id="contact-me" className="text-center text-white" style="background-color: #5E8B7E;">
+        <footer id="contact-me" className="text-center text-white">
          
             <div className="container pt-4">
               
@@ -49,7 +49,7 @@ const Footer = () => {
            
           
          
-            <div className="text-center text-dark p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+            <div className="text-center text-dark p-3" >
              Created By: Stephanie Chaparro-Roldan
             </div>
         
